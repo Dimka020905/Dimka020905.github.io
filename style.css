@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+input {
+	display: block;
+	margin: 0 auto;
+	margin-top:  50px;
+	width: 300px;
+	height: 70px;
+	font-size: 25px;
+	border-radius: 50px 50px 50px 50px;
+	padding-left: 10px;
+	outline: none;
+}
+
+button {
+	display: block;
+	margin: 0 auto;
+	margin-top:  20px;
+	width: 300px;
+	height: 70px;
+	font-size: 25px;
+	border-radius: 50px 50px 50px 50px;
+	padding-left: 10px;
+	outline: none;
+	background: crimson;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+.for-text, .for-text-russia {
+	text-align: center;
+	font-size: 25px;
+	margin-top: 20px;
+}
+
+p {
+	text-align: center;
+	margin-top: 15px;
+	font-size: 20px;
+}
+
+a {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 30px;
+	text-decoration: none;
+}
