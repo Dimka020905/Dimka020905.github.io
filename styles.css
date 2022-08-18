@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+h2, h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+h2 p, h3 p {
+    margin-left: 7px;
+}
+
+section {
+    display: flex;
+}
+
+section .box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+}
+
+.box.active {
+    background: #0EBEC9;
+}
+
+.box.error {
+    background: red;
+}
+
+.box.trueColor {
+    background: lime;
+}
