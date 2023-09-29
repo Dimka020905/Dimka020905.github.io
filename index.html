@@ -1,146 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Document</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<title>gd</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<div class="continer">
+		<div class="box">
+			<div class="found" style="--i:1;">
+				<div class="box-details">
+					<div class="field-1">
+						<input type="text" id="login" placeholder="Text" autocomplete="off" name="login">
+						<label for="login">Login</label>			
+					</div>			
+				</div>
+			</div>
+			<div class="found" style="--i:2;">				
+				<div class="box-details">
+					Q
+				</div>
+			</div>
+			<div class="found" style="--i:3;">				
+				<div class="box-details">
+					Q
+				</div>
+			</div>
+			<div class="found" style="--i:4;">				
+				<div class="box-details">
+					Q
+				</div>
+			</div>
+			<div class="found" style="--i:5;">				
+				<div class="box-details">
+					Q
+				</div>
+			</div>
+			<div class="found" style="--i:6;">				
+				<div class="box-details">
+					Q
+				</div>
+			</div>
+			<div class="found" style="--i:7;">				
+				<div class="box-details">
+					Q
+				</div>
+			</div>
+			<div class="found" style="--i:8;">				
+				<div class="box-details">
+					Q
+				</div>
+			</div>
 
-    <div class="container">
-        <section class="gallery">
-            
-            <div class="frame frame_bg">
-                <div class="frame-content">
-                    <h2 class="test">Місце Угорщини в міжнародному поділі праці</h2>
-                </div>
-            </div>
-            <div class="frame"></div>
-            <div class="frame">
-                <div class="frame-content text-right">
-                    <p>
-                        Графік: Показники експорту імпорту Угорщини за останні 5 років.
-                    </p>
-                </div>
-            </div>
+		</div>
+		<div class="btns">
+			<div class="btn prev"></div>
+			<div class="btn next"></div>
+		</div>
+	</div>
+	<script>
+		let el1 = document.querySelector(".prev");
+		let el2 = document.querySelector(".next");
+		let box = document.querySelector(".box")
 
+		let firstClick = true;
+		let degrees = 0;
 
-            <div class="frame">
-                <div class="frame-content">
-                    <div class="frame-media frame-media-left" style="background-image: url(1.png);">
-                        
-                    </div>
-                </div>
-            </div>
+		el1.addEventListener('click', function() {
 
-<div class="frame frame_bg"></div>
+			if(firstClick == true)
+			{
+				firstClick = false;
+				el1.click()
+			} 
 
-            <div class="frame">
-                <div class="frame-content text-right">
-                    <h3>Пояснення до графіка Імпорт Країни</h3>
-                    <p>
-<span class="id-1">Електричні машини, обладнання та їх частини; апаратура для запису або відтворення звуку; телевізійна апаратура для запису та відтворення зображення і звуку, їх частини та приладдя (22%)</span><br>
-<span class="id-2">Реактори ядерні, котли, машини, обладнання і механічні пристрої; їх частини (15%)</span><br>
-<span class="id-3">Палива мінеральні; нафта і продукти її перегонки; бітумінозні речовини; воски мінеральні (9%)</span><br>
-<span class="id-4">Засоби наземного транспорту, крiм залiзничного або трамвайного рухомого складу, їх частини та обладнання (9%)</span><br>
-<span class="id-5">Пластмаси, полімерні матеріали та вироби з них (5%)</span><br>
-<span class="id-6">Фармацевтична продукція (4%)</span><br>
-<span class="id-7">Чорні метали (3%)</span><br>
-<span class="id-9">Вироби з чорних металів (2%)</span><br>
-<span class="id-8">Інші (31%)</span><br>
-                    </p>
-                </div>
-            </div>
+			degrees += 45;
+			box.style = `transform: perspective(1000px) rotateY(${degrees}deg);`;
+		})
+		el2.addEventListener('click', function() {
+			if(firstClick == true)
+			{
+				firstClick = false;
+				el2.click()
+			} 
 
-             <div class="frame">
-                <div class="frame-content">
-                    <div class="frame-media frame-media-left" style="background-image: url(2.png);">
-                        
-                    </div>
-                </div>
-            </div>
+			degrees -= 45;
+			box.style = `transform: perspective(1000px) rotateY(${degrees}deg);`;
+		})
 
-            <div class="frame frame_bg"></div>
-
-            <div class="frame">
-                <div class="frame-content text-center">
-                    <p>
-Угорщина спеціалізується у виробництві високотехнологічних товарів. Фотографії демонструють сучасні підприємства та обладнання, які використовуються для виробництва продукції.
-                    </p>
-                </div>
-            </div>
-
-            <div class="frame frame_bg"></div>
-            <div class="frame"></div>
-
-            <div class="frame">
-                <div class="frame-content">
-                    <div class="frame-media frame-media-right" style="background-image: url(3.jpg);">
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="frame frame_bg"></div>
-
-            <div class="frame">
-                <div class="frame-content">
-                    <div class="frame-media frame-media-left" style="background-image: url(4.jpg);">
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="frame frame_bg"></div>
-
-            <div class="frame">
-                <div class="frame-content text-left">
-                    <p>Статистика показує, що Угорщина є лідером у виробництві компонентів для автомобільної та електронної промисловості. Це створює можливості для росту експорту та створення високооплачуваних робочих місць.</p>
-                </div>
-            </div>
-
-            <div class="frame">
-                <div class="frame-content">
-                    <div class="frame-media frame-media-right" style="background-image: url(6.png);">
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="frame frame_bg"></div>
-            <div class="frame">
-                <div class="frame-content text-right">
-                    <p class="id-2-1">Зростання реального ВВП (річна відсоткова зміна)</p>
-                    <p class="id-2-2">Рівень інфляції, середні споживчі ціни (зміна річних відсотків)</p>
-                    
-
-                </div>
-            </div>
-
-            <div class="frame"></div>
-
-            <div class="frame">
-                <div class="frame-content">
-                    <div class="frame-media frame-media-left" style="background-image: url(7.png);">
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="frame">
-                <div class="frame-content text-center">
-                    <p>
-Виконала Масюженко Тетяна
-                    </p>
-                </div>
-            </div>
-
-        </section>
-    </div>
-
-
-    <script src="script.js" defer></script>
+	</script>
 </body>
 </html>
